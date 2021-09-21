@@ -24,7 +24,6 @@ class Route {
     this.calory,
     this.durationTime
 });
-
 }
 
 class RouteType {
@@ -32,7 +31,6 @@ class RouteType {
   Icon icon;
 
   RouteType({required this.name, required this.icon });
-
 }
 
 class Distance {
