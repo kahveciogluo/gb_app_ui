@@ -10,7 +10,11 @@ class RoutePage extends StatefulWidget {
 class _RoutePageState extends State<RoutePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Rotalar'),
+      ),
+    );
   }
 }
 
