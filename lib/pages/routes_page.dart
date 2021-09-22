@@ -69,49 +69,57 @@ class _RoutePageState extends State<RoutePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        SizedBox(width: 2.0),
-                        _buildRouteTypeIcon(index),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text((myRouteList[index].rate).toString(), style: TextStyle(color: Colors.white, fontSize: 12.0),),
-                            Icon(Icons.star, color: Colors.orangeAccent,),
-                          ],
-                        ),
-                        SizedBox(width: 2.0),
-                      ],
-                    ),
+                    _buildTopLine(index),
                     SizedBox(height: 10.0),
                     Text(myRouteList[index].name, style: TextStyle(color: Colors.white, fontSize: 13.0, fontWeight: FontWeight.bold)),
                     SizedBox(height: 10.0),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.add_location_alt_outlined, color: Colors.white, size: 15.0,),
-                            Text((myRouteList[index].destinationCount).toString()+' Nokta',style: TextStyle(color: Colors.white, fontSize: 9.0)),
-                          ],
-                        ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.rule, color: Colors.white, size: 15.0,),
-                            Text((myRouteList[index].distance.amount).toString()+' '+(myRouteList[index].distance.unit),style: TextStyle(color: Colors.white, fontSize: 9.0)),
-                          ],
-                        )
-                      ],
-                    )
+                    _buildBottomLine(index)
                   ],
                 ),
               ),
             ],
           );
         });
+  }
+
+  Row _buildBottomLine(int index) {
+    return Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.add_location_alt_outlined, color: Colors.white, size: 15.0,),
+                          Text((myRouteList[index].destinationCount).toString()+' Nokta',style: TextStyle(color: Colors.white, fontSize: 9.0)),
+                        ],
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.rule, color: Colors.white, size: 15.0,),
+                          Text((myRouteList[index].distance.amount).toString()+' '+(myRouteList[index].distance.unit),style: TextStyle(color: Colors.white, fontSize: 9.0)),
+                        ],
+                      )
+                    ],
+                  );
+  }
+
+  Row _buildTopLine(int index) {
+    return Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(width: 2.0),
+                      _buildRouteTypeIcon(index),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text((myRouteList[index].rate).toString(), style: TextStyle(color: Colors.white, fontSize: 12.0),),
+                          Icon(Icons.star, color: Colors.orangeAccent,),
+                        ],
+                      ),
+                      SizedBox(width: 2.0),
+                    ],
+                  );
   }
 
   Icon _buildRouteTypeIcon(int index) {
