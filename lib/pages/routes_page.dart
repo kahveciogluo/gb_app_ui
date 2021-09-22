@@ -31,7 +31,7 @@ class _RoutePageState extends State<RoutePage> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(bottomRight: Radius.circular(25), bottomLeft: Radius.circular(25)),
       ),
-      title: Center(child: Text('Keşfedeceğiniz Rotalar', style: TextStyle(fontFamily: 'Poppins', fontSize: 14.5, fontWeight: FontWeight.bold))),
+      title: Center(child: Text("Keşfedeceğiniz Rotalar", style: TextStyle(fontFamily: "Poppins", fontSize: 14.5, fontWeight: FontWeight.bold))),
     );
   }
 
@@ -90,14 +90,14 @@ class _RoutePageState extends State<RoutePage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.add_location_alt_outlined, color: Colors.white, size: 15.0,),
-                          Text((myRouteList[index].destinationCount).toString()+' Nokta',style: TextStyle(color: Colors.white, fontSize: 9.0)),
+                          Text((myRouteList[index].destinationCount).toString()+" Nokta",style: TextStyle(color: Colors.white, fontSize: 9.0)),
                         ],
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.rule, color: Colors.white, size: 15.0,),
-                          Text((myRouteList[index].distance.amount).toString()+' '+(myRouteList[index].distance.unit),style: TextStyle(color: Colors.white, fontSize: 9.0)),
+                          Text((myRouteList[index].distance.amount).toString()+" "+(myRouteList[index].distance.unit),style: TextStyle(color: Colors.white, fontSize: 9.0)),
                         ],
                       )
                     ],
