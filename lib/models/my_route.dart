@@ -1,36 +1,35 @@
 import 'package:flutter/material.dart';
 
-class Route {
+class MyRoute {
   String name;
   String? description;
-  RouteType routeType;
-  var image;
+  MyRouteType myRouteType;
+  AssetImage image;
   double? rate;
   int destinationCount;
   Distance distance;
   int? step;
-  int? calory;
+  int? calorie;
   DurationTime? durationTime;
 
-  Route({
+  MyRoute({
     required this.name,
     this.description,
-    required this.routeType,
+    required this.myRouteType,
     required this.image,
     this.rate,
     required this.destinationCount,
     required this.distance,
     this.step,
-    this.calory,
+    this.calorie,
     this.durationTime
 });
 }
 
-class RouteType {
-  String name;
-  Icon icon;
-
-  RouteType({required this.name, required this.icon });
+enum MyRouteType {
+  bike,
+  car,
+  walk,
 }
 
 class Distance {
