@@ -14,6 +14,7 @@ class _RoutePageState extends State<RoutePage> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: _buildAppBar(context),
       body: Container(
@@ -39,42 +40,88 @@ class _RoutePageState extends State<RoutePage> {
         itemCount: myRouteList.length,
         itemBuilder: (BuildContext context, int index){
           return Stack(
+            alignment: Alignment.center,
             children: [
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 150,
-                padding: EdgeInsets.only(left: 4.0, right: 4.0),
-                child: Card(
-                  semanticContainer: true,
-                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                  child: Image.asset(myRouteList[index].imageUrl, fit: BoxFit.fill),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  elevation: 5,
+                margin: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 4.0, top: 4.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0) ,
+                    image: DecorationImage(
+                        image: AssetImage(myRouteList[index].imageUrl),
+                        fit: BoxFit.fill
+                    )
                 ),
               ),
               Positioned(
-                width: MediaQuery.of(context).size.width ,
-                height: 150,
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   height: 150,
-                  padding: EdgeInsets.only(left: 4.0, right: 4.0),
-                  child: Card(
-                    semanticContainer: true,
-                    clipBehavior: Clip.antiAliasWithSaveLayer,
-                    color: Colors.black,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    elevation: 5,
+                  margin: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 4.0, top: 4.0),
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.6),
+                      borderRadius: BorderRadius.circular(10.0) ,
+                      ),
                   ),
-                )
+                ),
+              Positioned(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        SizedBox(width: 2.0),
+                        _buildRouteTypeIcon(index),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text((myRouteList[index].rate).toString(), style: TextStyle(color: Colors.white, fontSize: 12.0),),
+                            Icon(Icons.star, color: Colors.orangeAccent,),
+                          ],
+                        ),
+                        SizedBox(width: 2.0),
+                      ],
+                    ),
+                    SizedBox(height: 10.0),
+                    Text(myRouteList[index].name, style: TextStyle(color: Colors.white, fontSize: 13.0, fontWeight: FontWeight.bold)),
+                    SizedBox(height: 10.0),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.add_location_alt_outlined, color: Colors.white, size: 15.0,),
+                            Text((myRouteList[index].destinationCount).toString()+' Nokta',style: TextStyle(color: Colors.white, fontSize: 9.0)),
+                          ],
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.rule, color: Colors.white, size: 15.0,),
+                            Text((myRouteList[index].distance.amount).toString()+' '+(myRouteList[index].distance.unit),style: TextStyle(color: Colors.white, fontSize: 9.0)),
+                          ],
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ),
             ],
           );
         });
+  }
+
+  Icon _buildRouteTypeIcon(int index) {
+    if(myRouteList[index].myRouteType == MyRouteType.bike){
+      return Icon(Icons.directions_bike_rounded, color: Colors.white,);
+    }
+    else if(myRouteList[index].myRouteType == MyRouteType.car){
+      return Icon(Icons.car_rental, color: Colors.white,);
+    }
+    return Icon(Icons.directions_walk_rounded, color: Colors.white);
   }
 
 }
