@@ -81,7 +81,7 @@ class MyRouteList {
       durationTime: DurationTime(amount: 55, unit: "Dakika"),
     ),
     //Route9
-    MyRoute(name: "Barbaros Denizi Gemiyle Geçti; Sen Sahili Pedalla Geç",
+    MyRoute(name: "Sahili Pedalla Geç",
       myRouteType: MyRouteType.bike,
       imageUrl: "assets/pics/4.jpg",
       rate: 4.4,
