@@ -38,19 +38,43 @@ class _RoutePageState extends State<RoutePage> {
     return ListView.builder(
         itemCount: myRouteList.length,
         itemBuilder: (BuildContext context, int index){
-          return Container(
-            height: 150,
-            padding: EdgeInsets.only(left: 4.0, right: 4.0),
-            child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10.0),
+          return Stack(
+            children: [
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: 150,
+                padding: EdgeInsets.only(left: 4.0, right: 4.0),
+                child: Card(
+                  semanticContainer: true,
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  child: Image.asset(myRouteList[index].imageUrl, fit: BoxFit.fill),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  elevation: 5,
+                ),
               ),
-              elevation: 0,
-              child: Image.asset(myRouteList[index].image.toString()),
-            ),
+              Positioned(
+                width: MediaQuery.of(context).size.width ,
+                height: 150,
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 150,
+                  padding: EdgeInsets.only(left: 4.0, right: 4.0),
+                  child: Card(
+                    semanticContainer: true,
+                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                    color: Colors.black,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+                    elevation: 5,
+                  ),
+                )
+              ),
+            ],
           );
         });
   }
 
 }
-

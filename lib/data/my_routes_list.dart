@@ -6,7 +6,7 @@ class MyRouteList {
     //Route1
     MyRoute(name: "Tarihi Yarımadanın Asırlık Lezzetleri",
         myRouteType: MyRouteType.walk,
-        image: const AssetImage("assets/pics/1.png"),
+        imageUrl: "assets/pics/1.png",
         destinationCount: 12,
         distance: Distance(amount: 5, unit: 'Km'),
         step: 6749,
@@ -15,7 +15,7 @@ class MyRouteList {
     //Route2
     MyRoute(name: "Sürüş Keyfiniz Bol, Yolunuz Düz Olsun",
       myRouteType: MyRouteType.car,
-      image: const AssetImage("assets/pics/2.jpg"),
+      imageUrl: "assets/pics/2.jpg",
       destinationCount: 13,
       distance: Distance(amount: 35, unit: 'Km'),
       durationTime: DurationTime(amount: 23, unit: 'Dakika'),
@@ -23,7 +23,7 @@ class MyRouteList {
     //Route3
     MyRoute(name: "Tarihin ve Müzenin Şehri: İstanbul",
       myRouteType: MyRouteType.walk,
-      image: const AssetImage("assets/pics/3.jpg"),
+      imageUrl: "assets/pics/3.jpg",
       destinationCount: 20,
       distance: Distance(amount: 4, unit: 'Km'),
       step: 5497,
@@ -32,7 +32,7 @@ class MyRouteList {
     //Route4
     MyRoute(name: "Beyoğlu'nun Arka Sokakları",
       myRouteType: MyRouteType.walk,
-      image: const AssetImage("assets/pics/4.jpg"),
+      imageUrl: "assets/pics/4.jpg",
       destinationCount: 16,
       distance: Distance(amount: 3, unit: 'Km'),
       step: 4030,
@@ -41,7 +41,7 @@ class MyRouteList {
     //Route5
     MyRoute(name: "Kadıköy'e Buyur Bir de Buradan Bak",
       myRouteType: MyRouteType.walk,
-      image: const AssetImage("assets/pics/5.jpg"),
+      imageUrl: "assets/pics/5.jpg",
       destinationCount: 8,
       distance: Distance(amount: 3, unit: 'Km'),
       step: 10345,
@@ -50,7 +50,7 @@ class MyRouteList {
     //Route6
     MyRoute(name: "Anadolu'nun En Uzun Sahilinde Pedal Çevirmeye Var Mısın?",
       myRouteType: MyRouteType.bike,
-      image: const AssetImage("assets/pics/1.png"),
+      imageUrl: "assets/pics/1.png",
       destinationCount: 15,
       distance: Distance(amount: 16, unit: 'Km'),
       durationTime: DurationTime(amount: 48, unit: 'Dakika'),
@@ -59,7 +59,7 @@ class MyRouteList {
     //Route7
     MyRoute(name: "Kasr-ı İstanbul",
       myRouteType: MyRouteType.car,
-      image: const AssetImage("assets/pics/2.jpg"),
+      imageUrl: "assets/pics/2.jpg",
       destinationCount: 10,
       distance: Distance(amount: 47, unit: 'Km'),
       durationTime: DurationTime(amount: 31, unit: 'Dakika'),
@@ -67,7 +67,7 @@ class MyRouteList {
     //Route8
     MyRoute(name: "İstanbul Boğazı'nın Manevi Muhafızları",
       myRouteType: MyRouteType.car,
-      image: const AssetImage("assets/pics/3.jpg"),
+      imageUrl: "assets/pics/3.jpg",
       destinationCount: 9,
       distance: Distance(amount: 82, unit: 'Km'),
       durationTime: DurationTime(amount: 55, unit: 'Dakika'),
@@ -75,7 +75,7 @@ class MyRouteList {
     //Route9
     MyRoute(name: "Barbaros Denizi Gemiyle Geçti; Sen Sahili Pedalla Geç",
       myRouteType: MyRouteType.bike,
-      image: const AssetImage("assets/pics/4.jpg"),
+      imageUrl: "assets/pics/4.jpg",
       destinationCount: 18,
       distance: Distance(amount: 12, unit: 'Km'),
       durationTime: DurationTime(amount: 36, unit: 'Dakika'),
@@ -84,7 +84,7 @@ class MyRouteList {
     //Route10
     MyRoute(name: "İstanbul'un Nostaljisi: Kuzguncuk",
       myRouteType: MyRouteType.walk,
-      image: const AssetImage("assets/pics/5.jpg"),
+      imageUrl: "assets/pics/5.jpg",
       destinationCount: 13,
       distance: Distance(amount: 2, unit: 'Km'),
       step: 2544,

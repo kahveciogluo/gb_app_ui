@@ -4,7 +4,7 @@ class MyRoute {
   String name;
   String? description;
   MyRouteType myRouteType;
-  AssetImage image;
+  String imageUrl;
   double? rate;
   int destinationCount;
   Distance distance;
@@ -16,7 +16,7 @@ class MyRoute {
     required this.name,
     this.description,
     required this.myRouteType,
-    required this.image,
+    required this.imageUrl,
     this.rate,
     required this.destinationCount,
     required this.distance,
