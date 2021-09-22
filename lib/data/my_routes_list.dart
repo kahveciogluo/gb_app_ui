@@ -53,7 +53,7 @@ class MyRouteList {
       calorie: 315,
     ),
     //Route6
-    MyRoute(name: "Anadolu'nun En Uzun Sahilinde Pedal Çevirmeye Var Mısın?",
+    MyRoute(name: "Bisikletin Şehri: İstanbul",
       myRouteType: MyRouteType.bike,
       imageUrl: "assets/pics/1.png",
       rate: 4.5,
