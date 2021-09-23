@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:gb_app_ui/models/my_route.dart';
 
 class MyRouteList {

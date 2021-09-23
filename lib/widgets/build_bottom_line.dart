@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:gb_app_ui/data/my_routes_list.dart';
 
 class BuildBottomLine extends StatelessWidget {
-  final MyRouteList myRouteList;
-  const BuildBottomLine({Key? key}) : super(key: key);
+  List myRouteList = MyRouteList().myRoutesList;
+  int index;
+  BuildBottomLine({Key? key, required this.index}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +26,6 @@ class BuildBottomLine extends StatelessWidget {
           ],
         )
       ],
-    );;
+    );
   }
 }
