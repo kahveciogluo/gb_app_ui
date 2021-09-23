@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyRoute {
   String name;
-  String? description;
+  String description;
   MyRouteType myRouteType;
   String imageUrl;
   double? rate;
@@ -14,7 +14,7 @@ class MyRoute {
 
   MyRoute({
     required this.name,
-    this.description,
+    required this.description,
     required this.myRouteType,
     required this.imageUrl,
     this.rate,
