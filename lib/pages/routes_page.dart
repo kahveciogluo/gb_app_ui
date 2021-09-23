@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gb_app_ui/data/my_routes_list.dart';
 import 'package:gb_app_ui/models/my_route.dart';
-import 'package:gb_app_ui/widgets/build_bottom_line.dart';
-import 'package:gb_app_ui/widgets/build_top_line.dart';
+import 'package:gb_app_ui/widgets/bottom_line_widget.dart';
+import 'package:gb_app_ui/widgets/top_line_widget.dart';
 
 class RoutePage extends StatefulWidget {
   const RoutePage({Key? key}) : super(key: key);
@@ -68,15 +68,20 @@ class _RoutePageState extends State<RoutePage> {
                   ),
                 ),
               Positioned(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    BuildTopLine(index: index),
-                    SizedBox(height: 10.0),
-                    Text(myRouteList[index].name, style: TextStyle(color: Colors.white, fontSize: 13.0, fontWeight: FontWeight.bold)),
-                    SizedBox(height: 10.0),
-                    BuildBottomLine(index: index)
-                  ],
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 150,
+                  margin: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 4.0, top: 4.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      TopLineWidget(index: index),
+                      SizedBox(height: 5.0),
+                      Text(myRouteList[index].name, style: TextStyle(color: Colors.white, fontSize: 13.0, fontWeight: FontWeight.bold)),
+                      SizedBox(height: 5.0),
+                      BottomLineWidget(index: index)
+                    ],
+                  ),
                 ),
               ),
             ],
