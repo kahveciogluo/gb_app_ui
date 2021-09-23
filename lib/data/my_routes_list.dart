@@ -15,11 +15,6 @@ class MyRouteList {
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
     ),
     //Route2
     MyRoute(name: "Sürüş Keyfiniz Bol, Yolunuz Düz Olsun",
@@ -30,11 +25,6 @@ class MyRouteList {
       distance: Distance(amount: 35, unit: "Km"),
       durationTime: DurationTime(amount: 23, unit: "Dakika"),
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
@@ -52,11 +42,6 @@ class MyRouteList {
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
     ),
     //Route4
     MyRoute(name: "Beyoğlu'nun Arka Sokakları",
@@ -68,11 +53,6 @@ class MyRouteList {
       step: 4030,
       calorie: 123,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
@@ -90,11 +70,6 @@ class MyRouteList {
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
     ),
     //Route6
     MyRoute(name: "Bisikletin Şehri: İstanbul",
@@ -106,11 +81,6 @@ class MyRouteList {
       durationTime: DurationTime(amount: 48, unit: "Dakika"),
       calorie: 544,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
@@ -127,11 +97,6 @@ class MyRouteList {
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
     ),
     //Route8
     MyRoute(name: "İstanbul Boğazı'nın Manevi Muhafızları",
@@ -142,11 +107,6 @@ class MyRouteList {
       distance: Distance(amount: 82, unit: "Km"),
       durationTime: DurationTime(amount: 55, unit: "Dakika"),
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
@@ -164,11 +124,6 @@ class MyRouteList {
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
     ),
     //Route10
     MyRoute(name: "İstanbul'un Nostaljisi: Kuzguncuk",
@@ -180,11 +135,6 @@ class MyRouteList {
       step: 2544,
       calorie: 78,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing '
-            'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
-            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
-            'laboris nisi ut aliquip ex ea commodo consequat. '
-            '\n\n'
-            'Lorem ipsum dolor sit amet, consectetur adipiscing '
             'elit, sed do eiusmod tempor incididunt ut labore et dolore magna '
             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco '
             'laboris nisi ut aliquip ex ea commodo consequat. '
