@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class MoreThanPage extends StatefulWidget {
+  const MoreThanPage({Key? key}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _MoreThanPageState createState() => _MoreThanPageState();
 }
 
-class _HomePageState extends State<HomePage> {
-
+class _MoreThanPageState extends State<MoreThanPage> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: _buildAppBar(context),
       body: Center(
@@ -31,8 +29,7 @@ class _HomePageState extends State<HomePage> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(bottomRight: Radius.circular(25), bottomLeft: Radius.circular(25)),
       ),
-      title: Center(child: Text("Ana Sayfa", style: TextStyle(fontFamily: "Poppins", fontSize: 14.5, fontWeight: FontWeight.bold))),
+      title: Center(child: Text("Daha Fazla", style: TextStyle(fontFamily: "Poppins", fontSize: 14.5, fontWeight: FontWeight.bold))),
     );
   }
-
 }
