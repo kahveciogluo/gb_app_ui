@@ -30,11 +30,11 @@ class TopLineWidget extends StatelessWidget {
 
   Icon _buildRouteTypeIcon(int index) {
     if(myRouteList[index].myRouteType == MyRouteType.bike){
-      return Icon(Icons.directions_bike_rounded, color: Colors.white,);
+      return Icon(Icons.directions_bike_rounded, color: Colors.white, size: 24.0);
     }
     else if(myRouteList[index].myRouteType == MyRouteType.car){
-      return Icon(Icons.car_rental, color: Colors.white,);
+      return Icon(Icons.car_rental, color: Colors.white, size: 24.0);
     }
-    return Icon(Icons.directions_walk_rounded, color: Colors.white);
+    return Icon(Icons.directions_walk_rounded, color: Colors.white, size: 24.0);
   }
 }
