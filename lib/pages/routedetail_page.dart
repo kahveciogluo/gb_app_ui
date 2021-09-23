@@ -20,20 +20,61 @@ class _RouteDetailPageState extends State<RouteDetailPage> {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBarForRouteDetailPage(myRoute: myRoute),
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-                  (_, int index) {
-                return ListTile(
-                  leading: Container(
-                      padding: EdgeInsets.all(8),
-                      width: 100,
-                      child: Placeholder()),
-                  title: Text('Place ${index + 1}', textScaleFactor: 2),
-                );
-              },
-              childCount: 20,
+          SliverFillRemaining(
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              child: RaisedButton(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(8.0))),
+                                color: Color(0xffdac286),
+                                elevation: 10,
+                                child: Text("Hakkında", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 10.0)),
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 5.0),
+                          Expanded(
+                            flex: 2,
+                            child: Container(
+                              child: RaisedButton(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(8.0))),
+                                color: Color(0xff00b194),
+                                elevation: 10,
+                                child: Text("Başla", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 11.0)),
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 5.0),
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              child: RaisedButton(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(8.0))),
+                                color: Color(0xffe66931),
+                                elevation: 10,
+                                child: Text("Detaylar", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 10.0)),
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                        ],
+
+                      ),
+                    ),
+                  ],
+                ),
             ),
-          ),
+          )
         ],
       ),
     );
